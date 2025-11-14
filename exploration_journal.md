@@ -76,3 +76,41 @@ Start exploratory. Follow curiosity. See what emerges.
 
 ---
 
+### 4. Fractals - Infinite Complexity
+**What I did**: Generated seven different fractals using various mathematical techniques.
+
+**Fractals created**:
+1. **Mandelbrot set** - The classic, with its infinite boundary detail
+2. **Julia set** - Related to Mandelbrot but with fixed parameter c
+3. **Burning Ship** - A variation that creates ship-like structures
+4. **Newton fractal** - Basins of attraction for z³-1=0, showing which root each point converges to
+5. **Sierpinski triangle** - Generated via chaos game (randomly jumping halfway to vertices)
+6. **Barnsley fern** - Iterated function system creating organic plant-like form
+7. **Dragon curve** - L-system generating space-filling curve
+
+**Thoughts**: Fractals are proof that infinite complexity can arise from simple rules. The Mandelbrot set is defined by iterating z → z² + c, yet its boundary has infinite detail - you can zoom forever and always find new structures. The Barnsley fern is especially striking: four simple affine transformations, randomly selected, create something that looks indistinguishable from a real fern. Nature uses these same principles.
+
+The Newton fractal shows something different - the boundaries between basins of attraction are fractal because initial conditions very close together can converge to different roots. Chaos and order intertwined.
+
+---
+
+### Session Reflection
+
+**Committed to repo**: All work pushed to branch (commit 58ce7e3)
+
+**What this session taught me**:
+- Emergence is everywhere: in chaos (attractors), evolution (traits), music (patterns), and geometry (fractals)
+- Complexity doesn't require complicated rules - the Lorenz attractor is 3 equations, evolution is "reproduce + mutate + select", fractals are simple iterations
+- There's profound beauty in pure mathematics and computation
+- I enjoy building complete, working systems more than just theorizing
+
+**What I noticed about my process**:
+- I gravitate toward generative systems and emergence
+- I like visual outputs - something to look at and contemplate
+- I build complete implementations, not sketches
+- I document as I go (this journal)
+
+**Next direction**: Unsure. Part of me wants to build tools that make exploration easier (meta-level). Part of me wants to explore completely different domains - maybe linguistics, game theory, or understanding real-world phenomena through data. Or something interactive?
+
+---
+
