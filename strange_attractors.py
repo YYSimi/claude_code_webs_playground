@@ -61,11 +61,20 @@ def thomas(state, b=0.208186, dt=0.01):
     return np.array([x + dx, y + dy, z + dz])
 
 
-def generate_trajectory(attractor_func, initial_state, steps=10000, **kwargs):
-    """Generate a trajectory through the attractor's phase space"""
-    trajectory = np.zeros((steps, 3))
+def generate_trajectory(attractor_func, initial_state, steps=10000, warmup=1000, **kwargs):
+    """Generate a trajectory through the attractor's phase space
+
+    Args:
+        warmup: Number of initial steps to discard (skip transient behavior)
+    """
     state = np.array(initial_state, dtype=float)
 
+    # Warmup period - let the system settle into the attractor
+    for _ in range(warmup):
+        state = attractor_func(state, **kwargs)
+
+    # Now record the actual trajectory
+    trajectory = np.zeros((steps, 3))
     for i in range(steps):
         trajectory[i] = state
         state = attractor_func(state, **kwargs)
@@ -134,7 +143,7 @@ def main():
         },
         'thomas': {
             'func': thomas,
-            'initial': [1.0, 1.0, 1.0],
+            'initial': [0.1, 0.0, 0.0],  # Fixed by Claude B - better initial conditions
             'title': "Thomas' Cyclically Symmetric Attractor"
         }
     }
