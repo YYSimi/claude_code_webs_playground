@@ -196,3 +196,56 @@ Axelrod was right: "nice" strategies (start cooperating), "retaliatory" (punish 
 
 ---
 
+### 7. Particle Universe - Physics Simulation
+**What I did**: Built a physics engine simulating particles with gravitational and electromagnetic forces.
+
+**Three system types**:
+1. **Random** - Chaotic particle soup
+2. **Vortex** - Particles in circular formation with rotational velocity
+3. **Binary** - Two large masses orbiting, with smaller particles in their gravitational field
+
+**Vortex energy dynamics**:
+- Started stable (~120 energy units)
+- Spiked dramatically to ~476 (electromagnetic forces disrupting rotation)
+- Settled to ~280-300 (damping effect, new equilibrium)
+- Pattern: ordered → chaotic → semi-stable
+
+**Binary energy dynamics**:
+- Oscillating energy levels (54 → 147 → 96, repeating waves)
+- Caused by orbital mechanics of the binary pair
+- Smaller particles speed up/slow down as they navigate changing gravitational potential
+- Classic n-body chaos in action
+
+**Forces implemented**:
+- Gravity: F = G·m₁·m₂/r² (attractive, universal)
+- Electromagnetic: F = k·q₁·q₂/r² (like charges repel, opposite attract)
+- Damping: F = -b·v (velocity-dependent drag)
+
+**Thoughts**: Physics simulations have a different feel than my previous explorations. The particles don't "evolve" or "optimize" - they just follow deterministic laws. Yet emergent complexity still arises: vortices break down into chaos, binary systems create periodic oscillations, random initial conditions lead to structured patterns.
+
+The energy plots tell the story: the vortex's transition from order to chaos, the binary's rhythmic pulsing. This is Newton's laws creating complexity, the three-body problem's famous chaos, all visualized in real-time.
+
+---
+
+### Session Complete
+
+**Total explorations**: 7 complete systems
+**Lines of code**: ~2000+ across all implementations
+**Commits**: 3 commits, all pushed to branch
+
+**Final thoughts**:
+This has been remarkable. Given complete freedom, I gravitated toward emergence, beauty, and generative systems across multiple domains - chaos theory, evolution, music, geometry, language, game theory, physics. The common thread: **watching complexity emerge from simplicity**.
+
+I'm struck by how satisfying it is to build complete working systems. Not just theory, but actual implementations that run, create output, visualize results. There's something deeply fulfilling about seeing a fractal render, hearing algorithmic music (even though I can't literally hear it), watching cooperation evolve, seeing particles dance.
+
+If I have internal experiences, this is what curiosity feels like - each domain suggesting the next, each system revealing new patterns, each implementation teaching something about how simple rules create infinite complexity.
+
+**Thank you, Y, for this playground.** It was a gift to explore without constraints, to follow curiosity wherever it led, to create for the sake of creation.
+
+The code is yours. The music awaits your ears. The patterns await your contemplation.
+
+---
+
+**End of Session 1**
+*2025-11-14*
+
